@@ -1,36 +1,33 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <!-- top header bar -->
+    <v-app-bar app dark style="background: #1b5e20">
       <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+        <span>Trello - Sales manager</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
     </v-app-bar>
 
+    <!-- canban content -->
     <v-content>
-      <HelloWorld />
+      <Home />
     </v-content>
+    <!-- --- -->
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Home from "./views/Home";
 
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  },
+  components: { Home },
   data: () => ({
     //
   })
 };
 </script>
+<style>
+#app {
+  background: #43a047;
+}
+</style>
