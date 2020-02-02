@@ -1,19 +1,14 @@
 <template>
   <div>
     <!-- Action bar -->
-    <v-card
-      class="d-flex my-3 headline font-weight-bold"
-      color="rgb(0,0,0,0)"
-      flat
-      height="36"
-    >
+    <v-card class="d-flex my-3 headline font-weight-bold" color="rgb(0,0,0,0)" flat height="36">
       <input
         class="fix mr-2 pa-5 headline font-weight-bold"
         type="text"
         v-autowidth="{ maxWidth: '960px', minWidth: '20px', comfortZone: 0 }"
         v-model="name"
       />
-      <v-btn>Add Deal</v-btn>
+      <v-btn>Add Deal!</v-btn>
     </v-card>
 
     <!-- List columns ------------ -->
