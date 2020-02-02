@@ -6,7 +6,7 @@ export default {
       tasks: [
         {
           id: "1",
-          name: "first task",
+          name: "Pirmas Pirma užduotis",
           description: "",
           userAssigned: null
         },
